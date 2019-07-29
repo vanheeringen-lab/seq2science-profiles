@@ -1,7 +1,10 @@
-cores: 46
+# execution
+cores: 48
+keep-going: True
 resources:
   - parallel_downloads=1
-  - mem_gb=62
-keep-going: True
+  - mem_gb=63
+
+# environment
 use-conda: True
 use-singularity: True
