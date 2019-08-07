@@ -4,7 +4,7 @@
   "resources":    "",
   "config":       "",
   "conda":        ["True", "False"],
-  "singularity":  ["True", "False"],
+  "singularity":  ["False", "True"],
   "keep_going":   ["True", "False"],
   "additional":   ""
 }
