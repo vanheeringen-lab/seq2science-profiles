@@ -1,0 +1,21 @@
+__default__:
+{%- for keyval in cookiecutter.default_rule.replace(' ', '').split(',') -%}
+{% set key, value = keyval.replace(':', '=').split('=') %}
+    {{key}}: {{value}}
+{%- endfor %}
+
+{% if cookiecutter.optional_rules|length -%}
+{%- for rulekeyval in cookiecutter.optional_rules.split(')') -%}
+{%- if rulekeyval|length -%}
+{%- set rule,keyvals = rulekeyval.split('(') -%}
+{%- set rule = rule.replace(' ', '').replace(',', '') %}
+{{rule}}:
+{%- for keyval in keyvals.split(',') -%}
+{% set key, value = keyval.replace(':', '=').split('=') -%}
+{%- set key = key.replace(' ', '').replace(',', '') -%}
+{%- set value = value.replace(' ', '').replace(',', '') %}
+    {{key}}: {{value}}
+{%- endfor %}
+{%- endif %}
+{%- endfor %}
+{%- endif %}

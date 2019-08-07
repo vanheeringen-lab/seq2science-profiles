@@ -1,0 +1,13 @@
+{
+  "profile_name": null,
+  "username":     null,
+  "max_jobs":     250,
+  "default_rule": "partition: ocimum, time: 45",
+  "optional_rules": "",
+  "resources":    "",
+  "config":       "",
+  "conda":        ["True", "False"],
+  "singularity":  ["False", "True"],
+  "keep_going":   ["True", "False"],
+  "additional":   ""
+}
