@@ -1,7 +1,7 @@
 default_context:
     profile_name: "moldev"
     max_jobs: 250
-    default_rule: "partition: ocimumpasserpartition, time: 60, mem_gb: 4"
+    default_rule: "partition: ocimumpasserpartition, time: 60, mem_gb: 2"
     optional_rules: "id2sra(partition: ocimumpartition)"
     resources: "parallel_downloads: 1"
     conda: "True"
