@@ -1,0 +1,10 @@
+{
+  "profile_name": null,
+  "cores":        null,
+  "resources":    "",
+  "config":       "",
+  "conda":        ["True", "False"],
+  "singularity":  ["True", "False"],
+  "keep_going":   ["True", "False"],
+  "additional":   ""
+}
