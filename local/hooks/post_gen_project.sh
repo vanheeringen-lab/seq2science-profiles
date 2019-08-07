@@ -15,4 +15,4 @@ mkdir "$HOME/.config/snakemake/{{cookiecutter.profile_name}}"
 
 # now place it in the snakemake profiles
 cd ..
-mv {{cookiecutter.profile_name}} "$HOME/.config/snakemake/{{cookiecutter.profile_name}}"
+mv {{cookiecutter.profile_name}} "$HOME/.config/snakemake/"
