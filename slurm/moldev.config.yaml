@@ -3,7 +3,7 @@ default_context:
     max_jobs: 250
     default_rule: "partition: ocimumpasserpartition, time: 60, mem_gb: 2"
     optional_rules: "id2sra(partition: ocimumpartition)"
-    resources: "parallel_downloads: 1"
+    resources: "parallel_downloads: 3"
     conda: "True"
     singularity: "False"
     keep_going: "True"

@@ -1,7 +1,7 @@
 default_context:
     profile_name: "threadripper"
     cores: 48
-    resources: "parallel_downloads: 1, mem_gb: 64"
+    resources: "parallel_downloads: 3, mem_gb: 64"
     conda: "True"
     singularity: "False"
     keep_going: "True"
