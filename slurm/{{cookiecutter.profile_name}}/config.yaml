@@ -9,6 +9,7 @@ resources:
 {%- endif %}
 {% if cookiecutter.config|length -%}
 config:
+  - email={{cookiecutter.email}}
 {%- for keyval in cookiecutter.config.replace(' ', '').split(',') -%}
 {% set key, value = keyval.replace(':', '=').split('=') %}
   - {{key}}={{value}}

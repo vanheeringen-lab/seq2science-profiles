@@ -3,6 +3,7 @@
   "cores":        null,
   "resources":    "",
   "config":       "",
+  "email":        "youremail@here.com",
   "conda":        ["True", "False"],
   "singularity":  ["False", "True"],
   "keep_going":   ["True", "False"],
