@@ -7,4 +7,4 @@ default_context:
     conda: "True"
     singularity: "False"
     keep_going: "True"
-    config: "ncbi_key: ba36a74749126e0d9558b7e19967417c3407, ncbi_requests: 10, ascp_path: $HOME/.aspera/connect/bin/ascp, ascp_key: $HOME/.aspera/connect/etc/asperaweb_id_dsa.openssh"
+    config: "ascp_path: $HOME/.aspera/connect/bin/ascp, ascp_key: $HOME/.aspera/connect/etc/asperaweb_id_dsa.openssh"
