@@ -3,7 +3,7 @@ default_context:
     max_jobs: 250
     default_rule: "partition: ocimumpartition, time: 60, mem_gb: 2"
     optional_rules: "bowtie2_align(partition: ocimumpasserpartition), bwa_mem(partition: ocimumpasserpartition), hisat2_align(partition: ocimumpasserpartition), star_align(partition: ocimumpasserpartition)"
-    resources: "parallel_downloads: 3"
+    resources: "parallel_downloads: 3, mem_gb: 999"
     conda: "True"
     singularity: "False"
     keep_going: "True"
