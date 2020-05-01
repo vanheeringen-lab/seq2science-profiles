@@ -3,7 +3,7 @@ default_context:
     max_jobs: 250
     default_rule: "partition: ocimumpartition, time: 60, mem_gb: 2"
     resources: "parallel_downloads: 3, mem_gb: 999"
-    optional_rules: "alignment(partition: ocimumpasserpartition), macs2_callpeak(partition: ocimumpasserpartition), mark_duplicates(partition: ocimumpasserpartition)"
+    optional_rules: "alignment(partition: ocimumpasserpartition, mem_gb: 12), macs2_callpeak(partition: ocimumpasserpartition), mark_duplicates(partition: ocimumpasserpartition)"
     conda: "True"
     singularity: "False"
     keep_going: "True"
