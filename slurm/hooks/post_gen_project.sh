@@ -1,18 +1,11 @@
 #!/bin/sh
 
-# if no snakemake configuration
-if [ ! -d "$HOME/.config/snakemake/" ]; then
-  mkdir "$HOME/.config/snakemake/"
-fi
-
 # if the profile already exists delete it
-if [ -d "$HOME/.config/snakemake/{{cookiecutter.profile_name}}" ]; then
-  rm -r "$HOME/.config/snakemake/{{cookiecutter.profile_name}}/"
-fi
+rm -rf "$HOME/.config/snakemake/{{cookiecutter.profile_name}}/"
 
 # make a directory for the profile
-mkdir "$HOME/.config/snakemake/{{cookiecutter.profile_name}}"
+mkdir -p "$HOME/.config/snakemake/{{cookiecutter.profile_name}}"
 
-# now place it in the snakemake profiles
+# now place the output in the snakemake profiles directory
 cd ..
 mv {{cookiecutter.profile_name}} "$HOME/.config/snakemake/"

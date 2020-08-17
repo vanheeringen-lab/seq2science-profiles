@@ -7,8 +7,6 @@
   "optional_rules": "",
   "resources":      "",
   "config":         "",
-  "conda":          ["True", "False"],
-  "singularity":    ["False", "True"],
-  "keep_going":     ["True", "False"],
+  "keepgoing":     ["True", "False"],
   "additional":     ""
 }

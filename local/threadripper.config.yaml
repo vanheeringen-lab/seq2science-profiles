@@ -1,8 +1,11 @@
 default_context:
-    profile_name: "threadripper"
+    profile_name: threadripper
     cores: 48
-    resources: "parallel_downloads: 3, mem_gb: 64"
-    conda: "True"
-    singularity: "False"
-    keep_going: "True"
-    config: "ascp_path: $HOME/.aspera/connect/bin/ascp, ascp_key: $HOME/.aspera/connect/etc/asperaweb_id_dsa.openssh"
+    resources:
+        mem_gb: 64
+    keepgoing: True
+    config:
+        ncbi_key: 123abc
+        ncbi_requests: 10
+        ascp_path: $HOME/.aspera/connect/bin/ascp
+        ascp_key: $HOME/.aspera/connect/etc/asperaweb_id_dsa.openssh

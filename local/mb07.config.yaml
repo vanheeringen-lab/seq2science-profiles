@@ -1,7 +1,6 @@
 default_context:
-    profile_name: "mb07"
+    profile_name: mb07
     cores: 64
-    resources: "parallel_downloads: 3, mem_gb: 500"
-    conda: "True"
-    singularity: "False"
-    keep_going: "True"
+    resources:
+        mem_gb: 500
+    keepgoing: True
