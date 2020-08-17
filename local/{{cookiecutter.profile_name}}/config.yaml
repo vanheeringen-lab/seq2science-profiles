@@ -4,22 +4,17 @@ cores: {{cookiecutter.cores}}
 resources:
 {%- for keyval in cookiecutter.resources.replace(' ', '').split(',') -%}
 {% set key, value = keyval.replace(':', '=').split('=') %}
-  - {{key}}={{value}}
+  {{key}}: {{value}}
 {%- endfor %}
 {%- endif %}
 {% if cookiecutter.config|length -%}
 config:
 {%- for keyval in cookiecutter.config.replace(' ', '').split(',') -%}
 {% set key, value = keyval.replace(':', '=').split('=') %}
-  - {{key}}={{value}}
+  {{key}}: {{value}}
 {%- endfor %}
 {%- endif %}
-keep-going: {{cookiecutter.keep_going}}
-
-
-# environment
-use-conda: {{cookiecutter.conda}}
-use-singularity: {{cookiecutter.singularity}}
+keepgoing: {{cookiecutter.keepgoing}}
 
 
 {% if cookiecutter.additional|length -%}
