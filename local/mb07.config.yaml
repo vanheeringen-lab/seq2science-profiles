@@ -1,6 +1,5 @@
 default_context:
     profile_name: mb07
     cores: 64
-    resources:
-        mem_gb: 500
+    resources: "mem_gb: 500"
     keepgoing: True
