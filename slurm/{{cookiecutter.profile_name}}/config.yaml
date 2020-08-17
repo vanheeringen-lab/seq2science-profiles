@@ -9,6 +9,7 @@ resources:
 {%- endif %}
 {% if cookiecutter.config|length -%}
 config:
+  - email={{cookiecutter.email}}
 {%- for keyval in cookiecutter.config.replace(' ', '').split(',') -%}
 {% set key, value = keyval.replace(':', '=').split('=') %}
   - {{key}}={{value}}
@@ -27,4 +28,4 @@ restart-times: 1
 # cluster
 jobname: snake-{jobid}-{rule}
 cluster-config: /home/{{cookiecutter.username}}/.config/snakemake/{{cookiecutter.profile_name}}/cluster.yaml
-cluster: sbatch $(~/.config/snakemake/{{cookiecutter.profile_name}}/parseJobID-SLURM.sh {dependencies}) --partition {cluster.partition} --time {cluster.time} -c {threads} --mem={cluster.mem_gb}g
+cluster: sbatch $(~/.config/snakemake/{{cookiecutter.profile_name}}/parseJobID-SLURM.sh {dependencies}) --partition {cluster.partition} --time {cluster.time} -c {threads} --mem {cluster.mem_gb}g

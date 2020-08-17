@@ -4,17 +4,22 @@ Easy [snakemake profile](https://snakemake.readthedocs.io/en/stable/executable.h
 ## Installation
 Installation has been made extremely easy and is done by [cookiecutter](https://cookiecutter.readthedocs.io/en/latest/)! 
 
-### local installation
+Start with cloning the repo locally and moving into the directory:
+
+    git clone git@github.com:vanheeringen-lab/snakemake-profiles.git
+    cd snakemake-profiles
+    
+### local machine installation
 `cookiecutter -f local`
 
-or with one of the provided configfiles:
+or with one of the provided configfiles (mb07 or threadripper):
 
 `cookiecutter -f --config-file=local/[[configfile]] local`
 
 ### slurm installation
 `cookiecutter -f slurm`
 
-or with one of the provided configfiles:
+or with one of the provided configfiles (moldev):
 
 `cookiecutter -f --config-file=slurm/[[configfile]] slurm`
 
