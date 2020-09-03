@@ -6,8 +6,8 @@ Installation has been made extremely easy and is done by [cookiecutter](https://
 
 Start with cloning the repo locally and moving into the directory:
 
-    git clone git@github.com:vanheeringen-lab/snakemake-profiles.git
-    cd snakemake-profiles
+    git clone git@github.com:vanheeringen-lab/seq2science-profiles.git
+    cd seq2science-profiles
     
 ### local machine installation
 `cookiecutter -f local`
