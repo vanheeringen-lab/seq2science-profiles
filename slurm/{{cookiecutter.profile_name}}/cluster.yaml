@@ -1,8 +1,8 @@
 __default__:
-{%- for keyval in cookiecutter.default_rule.replace(' ', '').split(',') -%}
-{% set key, value = keyval.replace(':', '=').split('=') %}
-    {{key}}: {{value}}
-{%- endfor %}
+    partition: {{cookiecutter.profile_name}}
+    time: 2-00:00:00
+    mem_gb: 4
+
 
 {% if cookiecutter.optional_rules|length -%}
 {%- for rulekeyval in cookiecutter.optional_rules.split(')') -%}

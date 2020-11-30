@@ -1,0 +1,5 @@
+default_context:
+    profile_name: rimlsfnwi
+    max_jobs: 150
+    keepgoing: True
+

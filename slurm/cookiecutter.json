@@ -1,9 +1,7 @@
 {
   "profile_name":   null,
-  "username":       null,
   "email":          "youremail@here.com",
   "max_jobs":       250,
-  "default_rule":   "partition: ocimumpasser, time: 45",
   "optional_rules": "",
   "resources":      "",
   "config":         "",

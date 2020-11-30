@@ -9,3 +9,7 @@ mkdir -p "$HOME/.config/snakemake/{{cookiecutter.profile_name}}"
 # now place the output in the snakemake profiles directory
 cd ..
 mv {{cookiecutter.profile_name}} "$HOME/.config/snakemake/"
+
+# and replace the ~ with /home/user
+sed -i "s|\~|${HOME}|" ~/.config/snakemake/{{cookiecutter.profile_name}}/config.yaml
+

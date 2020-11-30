@@ -1,7 +1,0 @@
-default_context:
-    profile_name: moldev
-    max_jobs: 250
-    default_rule: "partition: ocimumpasserpartition, time: 60, mem_gb: 2"
-    optional_rules: "id2sra(partition: ocimumpartition)"
-    keepgoing: True
-    config: "ncbi_key: ba36a74749126e0d9558b7e19967417c3407, ncbi_requests: 10, ascp_path: $HOME/.aspera/connect/bin/ascp, ascp_key: $HOME/.aspera/connect/etc/asperaweb_id_dsa.openssh"
