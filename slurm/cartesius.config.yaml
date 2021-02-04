@@ -3,3 +3,5 @@ default_context:
     max_jobs: 150
     keepgoing: True
     force_incomplete: True
+    optional_rules: "bwa_mem_index(partition:fat),bwa_mem2_index(partition:fat),bowtie2_index(partition:fat),hisat2_splice_aware_index(partition:fat),star_index(partition:fat),"
+    resources: "parallel_downloads:10,mem_gb:9999"

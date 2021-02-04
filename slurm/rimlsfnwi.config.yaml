@@ -3,4 +3,5 @@ default_context:
     max_jobs: 50
     keepgoing: True
     force_incomplete: True
+    resources: "mem_gb:9999"
 
