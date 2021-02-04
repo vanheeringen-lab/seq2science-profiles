@@ -29,4 +29,4 @@ latency_wait: 15
 jobname: seq2science-{jobid}-{rule}
 cluster_config: ~/.config/snakemake/{{cookiecutter.profile_name}}/cluster.yaml
 cluster_status: ~/.config/snakemake/{{cookiecutter.profile_name}}/status.py
-cluster: sbatch $(~/.config/snakemake/{{cookiecutter.profile_name}}/parseJobID-SLURM.sh {dependencies}) --partition {cluster.partition} --time {cluster.time} -c {threads} --mem {cluster.mem_gb}g
+cluster: ~/.config/snakemake/{{cookiecutter.profile_name}}/status.py

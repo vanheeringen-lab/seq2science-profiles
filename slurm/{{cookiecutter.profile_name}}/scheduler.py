@@ -42,12 +42,14 @@ keymap = {
 
 for key, slurmkey in keymap.items():
     if key in cluster_param:
-        command += f"--{slurmkey} {cluster_param[key]} "
+        command += f"--{slurmkey} {cluster_param[key]}"
+        if key == "mem_gb":
+            command += "G"
+        command += " "
 
 command += f"{jobscript} "
 
-# uncomment for debugging
-# eprint("submit command: " + command)
+eprint("submit command: " + command)
 
 p = Popen(command.split(" "), stdout=PIPE, stderr=PIPE)
 output, error = p.communicate()
