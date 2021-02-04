@@ -13,3 +13,5 @@ mv {{cookiecutter.profile_name}} "$HOME/.config/snakemake/"
 # and replace the ~ with /home/user
 sed -i "s|\~|${HOME}|" ~/.config/snakemake/{{cookiecutter.profile_name}}/config.yaml
 
+# finally make the scheduler script executable
+chmod +x ~/.config/snakemake/{{cookiecutter.profile_name}}/scheduler.py

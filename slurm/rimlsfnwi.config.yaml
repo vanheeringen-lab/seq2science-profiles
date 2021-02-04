@@ -1,5 +1,6 @@
 default_context:
     profile_name: rimlsfnwi
+    default_partition: rimlsfnwi
     max_jobs: 50
     keepgoing: True
     force_incomplete: True
