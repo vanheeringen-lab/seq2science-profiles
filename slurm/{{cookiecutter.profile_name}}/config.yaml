@@ -1,5 +1,6 @@
 # execution
 nodes: {{cookiecutter.max_jobs}}
+cores: {{cookiecutter.max_jobs}}
 {% if cookiecutter.resources|length -%}
 resources:
 {%- for keyval in cookiecutter.resources.replace(' ', '').split(',') -%}
@@ -16,6 +17,7 @@ config:
 {%- endfor %}
 {%- endif %}
 keepgoing: {{cookiecutter.keepgoing}}
+force_incomplete: {{cookiecutter.force_incomplete}}
 
 # environment
 use_conda: True

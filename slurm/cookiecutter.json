@@ -1,10 +1,11 @@
 {
-  "profile_name":   null,
-  "email":          "youremail@here.com",
-  "max_jobs":       250,
-  "optional_rules": "",
-  "resources":      "",
-  "config":         "",
-  "keepgoing":     ["True", "False"],
-  "additional":     ""
+  "profile_name":     null,
+  "email":            "youremail@here.com",
+  "max_jobs":         250,
+  "optional_rules":   "",
+  "resources":        "",
+  "config":           "",
+  "keepgoing":       ["True", "False"],
+  "force_incomplete": "True",
+  "additional":       ""
 }
