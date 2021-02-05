@@ -25,16 +25,18 @@ else:
     raise NotImplementedError(f"Don't know what to do with job_properties['type']=={job_properties['type']}")
 
 
-# use the time and memory specified in a rule. If not specified use the cluster config
-for res in ["mem_gb", "time"]:
+# use the memory, time and threads specified in a rule. If not specified use the cluster config
+for res in ["mem_gb", "time", "threads"]:
     if res in job_properties["resources"]:
         cluster_param[res] = job_properties["resources"][res]
+    if res in job_properties:
+        cluster_param[res] = job_properties[res]
 
 
 # construct command:
 command = "sbatch "
 keymap = {
-    "threads": "cores",
+    "threads": "ntasks",
     "mem_gb": "mem",
     "partition": "partition",
     "time": "time"
