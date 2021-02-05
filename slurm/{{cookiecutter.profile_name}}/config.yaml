@@ -26,6 +26,8 @@ use_conda: True
 latency_wait: 15
 
 # cluster
+max_jobs_per_second: {{cookiecutter.max_jobs_per_second}}
+max_status_checks_per_second: {{cookiecutter.max_status_checks_per_second}}
 jobname: seq2science-{jobid}-{rule}
 cluster_config: ~/.config/snakemake/{{cookiecutter.profile_name}}/cluster.yaml
 cluster_status: ~/.config/snakemake/{{cookiecutter.profile_name}}/status.py

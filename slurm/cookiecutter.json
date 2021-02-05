@@ -1,12 +1,14 @@
 {
-  "profile_name":      null,
-  "default_partition": "",
-  "email":             "youremail@here.com",
-  "max_jobs":          250,
-  "optional_rules":    "",
-  "resources":         "",
-  "config":            "",
-  "keepgoing":        ["True", "False"],
-  "force_incomplete": ["True", "False"],
-  "additional":        ""
+  "profile_name":                 null,
+  "default_partition":            "",
+  "email":                        "youremail@here.com",
+  "max_jobs":                     250,
+  "max_jobs_per_second":          5,
+  "max_status_checks_per_second": 1,
+  "optional_rules":               "",
+  "resources":                    "",
+  "config":                       "",
+  "keepgoing":                    ["True", "False"],
+  "force_incomplete":             ["True", "False"],
+  "additional":                   ""
 }
