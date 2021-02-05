@@ -7,6 +7,6 @@
   "resources":         "",
   "config":            "",
   "keepgoing":        ["True", "False"],
-  "force_incomplete":  "True",
+  "force_incomplete": ["True", "False"],
   "additional":        ""
 }
