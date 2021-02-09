@@ -6,3 +6,4 @@ default_context:
     force_incomplete: True
     optional_rules: "bwa_mem_index(partition:fat),bwa_mem2_index(partition:fat),bowtie2_index(partition:fat),hisat2_splice_aware_index(partition:fat),star_index(partition:fat)"
     resources: "parallel_downloads:40,mem_gb:99999"
+    additional: "restart_times:1"
