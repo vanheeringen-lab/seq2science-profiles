@@ -3,4 +3,3 @@ default_context:
     cores: 48
     resources: "mem_gb: 64"
     keepgoing: True
-    config: "ncbi_key: 123abc, ncbi_requests: 10, ascp_path: $HOME/.aspera/connect/bin/ascp, ascp_key: $HOME/.aspera/connect/etc/asperaweb_id_dsa.openssh"
