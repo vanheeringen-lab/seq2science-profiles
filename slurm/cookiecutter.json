@@ -1,7 +1,7 @@
 {
   "profile_name":                 null,
   "default_partition":            "",
-  "email":                        "youremail@here.com",
+  "email":                        "yourmail@here.com",
   "max_jobs":                     250,
   "max_jobs_per_second":          5,
   "max_status_checks_per_second": 1,
