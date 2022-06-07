@@ -3,6 +3,7 @@
 
 import sys
 from subprocess import Popen, PIPE
+from pathlib import Path
 
 from snakemake.utils import read_job_properties
 
@@ -48,6 +49,11 @@ for key, slurmkey in keymap.items():
         if key == "mem_gb":
             command += "G"
         command += " "
+
+# log all the slurm files to a dir to not clutter everything
+slurm_log_dir = "seq2science_slurm"
+Path(slurm_log_dir).mkdir(exist_ok=True)
+command += f"--error={slurm_log_dir}/%j.stderr --output={slurm_log_dir}/%j.stdout "
 
 command += f"{jobscript} "
 
