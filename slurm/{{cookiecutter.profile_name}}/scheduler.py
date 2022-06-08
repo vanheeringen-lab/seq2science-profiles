@@ -35,9 +35,9 @@ for res in ["mem_gb", "time", "threads"]:
 
 
 # construct command:
-command = "sbatch "
+command = "sbatch --nodes=1 "
 keymap = {
-    "threads": "ntasks",
+    "threads": "cpus-per-task",
     "mem_gb": "mem",
     "partition": "partition",
     "time": "time"
