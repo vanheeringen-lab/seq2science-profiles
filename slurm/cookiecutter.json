@@ -3,7 +3,7 @@
   "default_partition":            "",
   "email":                        "yourmail@here.com",
   "max_jobs":                     250,
-  "max_jobs_per_second":          5,
+  "max_jobs_per_second":          1,
   "max_status_checks_per_second": 1,
   "optional_rules":               "",
   "resources":                    "",
